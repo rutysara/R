@@ -66,6 +66,40 @@ d[5] # NA
 
 # Summary Function
 ?summary
+summary (d)
+summary (c)
+# If the value is a character type the summary function will not work in the same way, It will be different.
+
+# Functions from Non-Standard Packages
+??str_c
+
+# You need to install Packages. Search for the package that has the desired function.
+# In this case, the Function above is part of Strings but it was recommended on rdocumentation.org to install the whole TidyVerse Package.
+install.packages("tidyverse")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

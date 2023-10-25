@@ -22,15 +22,18 @@ B = NULL
 # The orientation of the arrow (<- or ->) is irrelevant as long as the arrow is pointing to the variable that you want to attribute a value to
 # c -> 10 = error, in any circumstance  you can attribute a value to a value
 10 -> c
+c
 
 # As soon as a variable has a value, you can attribute the variable's value to another variable
 c -> d
+d
 
 # STANDARD 2 : "Variable" <- Numerical Value or "String"
 # Note that Strings can be Numerical too
 a <- 10
 b <- 5
 c <- a + b
+c
 
 # You can re-create variable that you already used and it will override the previous value
 a
@@ -41,7 +44,7 @@ b <- "Matheus"
 
 # Functions
 # They are part of packages and need to be installed
-# Non-Standard packages have to be called?
+# These Non-Standard packages have to be also loaded (more on this later)
 
 c <- c(a,b)
 # Here, variable C was created using a FUNCTION that has letter c but it is not a variable and the system know is because of ()
@@ -76,25 +79,20 @@ summary (c)
 # You need to install Packages. Search for the package that has the desired function.
 # In this case, the Function above is part of Strings but it was recommended on rdocumentation.org to install the whole TidyVerse Package.
 install.packages("tidyverse")
+install.packages("stringi")
 
+# These have to be loaded every session:
+library(stringr)
+?str_c
 
+# Example
+Name <- "Matheus"
+Surname <- "Batista"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+FullName <- str_c(Name, Surname)
+FullName
+FullName <- str_c(Name, " ", Surname)
+FullName
 
 
 

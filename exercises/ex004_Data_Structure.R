@@ -9,7 +9,7 @@
 Name1 <- "Matheus"
 Name2 <- "Rutysara"
 Names <- c(Name1,Name2)
-is.vector(Names) # Asking R if this is actually a Vector. Note that no value was stored as vector because essentially they are all the same type of data storage
+is.vector(Names) # Asking R if this is actually a Vector. Note that no value was stored as vector because essentially they are all the same type of data storage (e.g. character type)
 
 # L I S T S
 

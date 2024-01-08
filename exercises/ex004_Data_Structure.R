@@ -83,9 +83,33 @@ setwd("C:/?")
 
 # Import Data Base
 # Use a variable to store info (commonly used = df, data frame)
+# Use appropriate function for your file (commonly used read.csv) as there are many functions that could do the importation quicker than others in different situations
 df <- read.csv("filepathway")
 
+# NOTE: Data cannot be edited in R.
 
+# Analyse Data Frame
+view(df)
+
+# Data types
+str(df)
+summary(df)
+
+# Variable selection
+df # All variables, not a good practise for extensive data
+df[1] # Same as before, number in [] represents the data column
+df$columnname? # Common practise, use $ followed by column name, no need column number
+
+Col1 <- df[1] # Still a Data Frame as per original
+Col2 <- df$columnname? # This new variable will become the data type of the column and not a Data Frame anymore
+
+# Data Frame Modifications
+# Deleting variables 
+# Atributing NULL to variables - DATA NOT RECOVERABLE. Example:
+df$columnname? <- NULL
+
+# Altering variable type
+# 13:17 youtube
 
 
 

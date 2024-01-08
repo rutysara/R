@@ -73,6 +73,17 @@ m2 <- matrix(list(d), nrow = 3, ncol = 3) # Does not work.
 
 # D A T A   F R A M E S
 
+# The most commonly used Data Structure. It works with an external data source (e.g. excel)
+# CSV file = Comma-separated values file stores tabular data (numbers and text) in plain text separated by commas
+
+# Define Working Area
+# setwd("working area pathway")
+# This will inform R where to get all the archives below from without the need to repeat the whole file pathway every time throughout the code
+setwd("C:/?")
+
+# Import Data Base
+# Use a variable to store info (commonly used = df, data frame)
+df <- read.csv("filepathway")
 
 
 

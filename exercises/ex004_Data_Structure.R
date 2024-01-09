@@ -65,7 +65,7 @@ m
 m[1,3]
 # To change the value of that specific data
 m[1,3] <- "a"
-# Now, the numeric matrix became a character one because a character was inserted
+# Now, the values in the numeric matrix all became a character value because a character was inserted
 m
 
 m2 <- matrix(list(d), nrow = 3, ncol = 3) # Does not work. 

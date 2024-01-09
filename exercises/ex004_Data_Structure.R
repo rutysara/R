@@ -73,8 +73,43 @@ m2 <- matrix(list(d), nrow = 3, ncol = 3) # Does not work.
 
 # D A T A   F R A M E S
 
+# The most commonly used Data Structure. It works with an external data source (e.g. excel)
+# CSV file = Comma-separated values file stores tabular data (numbers and text) in plain text separated by commas
 
+# Define Working Area
+# setwd("working area pathway")
+# This will inform R where to get all the archives below from without the need to repeat the whole file pathway every time throughout the code
+setwd("C:/?")
 
+# Import Data Base
+# Use a variable to store info (commonly used = df, data frame)
+# Use appropriate function for your file (commonly used read.csv) as there are many functions that could do the importation quicker than others in different situations
+df <- read.csv("filepathway")
+
+# NOTE: Data cannot be edited in R.
+
+# Analyse Data Frame
+view(df)
+
+# Data types
+str(df)
+summary(df)
+
+# Variable selection
+df # All variables, not a good practise for extensive data
+df[1] # Same as before, number in [] represents the data column
+df$columnname? # Common practise, use $ followed by column name, no need column number
+
+Col1 <- df[1] # Still a Data Frame as per original
+Col2 <- df$columnname? # This new variable will become the data type of the column and not a Data Frame anymore
+
+# Data Frame Modifications
+# Deleting variables 
+# Atributing NULL to variables - DATA NOT RECOVERABLE. Example:
+df$columnname? <- NULL
+
+# Altering variable type
+# 13:17 youtube
 
 
 

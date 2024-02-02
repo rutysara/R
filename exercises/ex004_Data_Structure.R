@@ -72,6 +72,7 @@ m2 <- matrix(list(d), nrow = 3, ncol = 3) # Does not work.
 # Matrices can contain heterogeneous data through lists for example, but it is more complex.
 
 # D A T A   F R A M E S
+library(stringr)
 
 # The most commonly used Data Structure. It works with an external data source (e.g. excel)
 # CSV file = Comma-separated values file stores tabular data (numbers and text) in plain text separated by commas
@@ -79,12 +80,12 @@ m2 <- matrix(list(d), nrow = 3, ncol = 3) # Does not work.
 # Define Working Area
 # setwd("working area pathway")
 # This will inform R where to get all the archives below from without the need to repeat the whole file pathway every time throughout the code
-setwd("C:/?")
+setwd("/Users/Rutysara/Documents/Programming studies/R/Data")
 
 # Import Data Base
 # Use a variable to store info (commonly used = df, data frame)
 # Use appropriate function for your file (commonly used read.csv) as there are many functions that could do the importation quicker than others in different situations
-df <- read.csv("filepathway")
+df <- read.csv("Research and experimental development (countries).csv")
 
 # NOTE: Data cannot be edited in R.
 

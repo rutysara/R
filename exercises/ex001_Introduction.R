@@ -29,7 +29,7 @@ c -> d
 d
 
 # STANDARD 2 : "Variable" <- Numerical Value or "String"
-# Note that Strings can be Numerical too
+# Note that Strings can be Numerical too but stored as string. So not 5 but "5".
 a <- 10
 b <- 5
 c <- a + b

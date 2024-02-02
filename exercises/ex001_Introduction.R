@@ -3,6 +3,8 @@
 # KEYBOARD SHORTCUTS
 # Clean Console Window (no deletion) = CTRL + L
 
+# V A R I A B L E S
+
 # Creating variables
 # To execute click over the line or a group of lines and press CTRL (or CMD) + Enter
 a <- 10
@@ -42,7 +44,8 @@ b <- "Matheus"
 
 # If you want to have both character values in one variable you have to use functions
 
-# Functions
+# F U N C T I O N S
+
 # They are part of packages and need to be installed
 # These Non-Standard packages have to be also loaded (more on this later)
 
